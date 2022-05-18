@@ -2,87 +2,107 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Ruslan VN</title>
+    <title>Resume RVN</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <table cellspacing="15">
-      <tr>
-        <td>
-          <img src="Мой аватар.jpeg" alt="My foto" width="200" />
-        </td>
-        <td>
+    <div class="container">
+      <div class="info">
+        <img src="Мой аватар.jpeg" alt="My foto" class="avatar" />
+        <div class="info-text">
           <h1>Руслан Велиев</h1>
           <p>
-            <em>
-              Интересует должность веб-программиста. Обладаю знаниями HTML, CSS,
-              Java. Желаемая заработная плата
-              <strong>от 100 000 рублей</strong>.
-            </em>
+            Интересует должность веб-программиста. Обладаю знаниями HTML, CSS,
+            Java. Желаемая заработная плата
+            <strong>от 100 000 рублей</strong>.
           </p>
           <p>Я люблю путешествовать, программировать и заниматься спортом</p>
-        </td>
-      </tr>
-    </table>
 
-    <hr />
+          <h4>Мои социальные сети</h4>
 
-    <h2>Мои социальные сети</h2>
-    <ul type="square">
-      <li><a href="https://rbc.ru" target="_blank">РБК</a></li>
-      <li><a href="https://google.com" target="_blank">ГУГЛ</a></li>
-    </ul>
+          <a
+            href="https://www.facebook.com/profile.php?id=100080752457421"
+            target="_blank"
+            >Facebook</a
+          >
+          |
+          <a href="https://google.com" target="_blank">ГУГЛ</a>
+        </div>
+      </div>
 
-    <hr />
+      <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
+        <ol class="list">
+          <li>Пишу</li>
+          <li>Дышу</li>
+          <li>Пою</li>
+        </ol>
+      </div>
 
-    <h2>Мои хобби</h2>
-    <ol type="I">
-      <li>Пишу</li>
-      <li>Дышу</li>
-      <li>Пою</li>
-    </ol>
+      <div class="card bg-green">
+        <h2>Опыт работы</h2>
+        <table class="table">
+          <tr>
+            <td>ООО МЦКО</td>
+            <td>психолог</td>
+            <td>1997-2000</td>
+          </tr>
 
-    <hr />
+          <tr>
+            <td>ООО Лес</td>
+            <td>егерь</td>
+            <td>2000-2003</td>
+          </tr>
+          <tr>
+            <td>КООП Озеро</td>
+            <td>жулик</td>
+            <td>2004-2005</td>
+          </tr>
+        </table>
+      </div>
 
-    <h2>Опыт работы</h2>
-    <table>
-      <tr>
-        <th>Компания</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </tr>
-      <tr>
-        <td>ООО Лес</td>
-        <td>егерь</td>
-        <td>2000-2003</td>
-      </tr>
-      <tr>
-        <td>ООО Озеро</td>
-        <td>Жулик</td>
-        <td>2004-2005</td>
-      </tr>
-    </table>
+      <div class="card bg-red">
+        <h2>Допинформация ниже</h2>
+        <ul class="link-list">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100080752457421"
+              >ссылка на FB</a
+            >
+          </li>
+          <li>
+            <a href="https://google.com">ссылка на Google</a>
+          </li>
+        </ul>
+      </div>
 
-    <hr />
+      <div class="contact">
+        <h2>Связаться со мной</h2>
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" placeholder="Введите имя" />
+            </div>
 
-    <h2>Допинформация ниже</h2>
-    <a href="Sekond page.html">Посмотреть</a>
+            <div class="form-group">
+              <label for="email">Ваш email</label>
+              <input type="text" id="email" placeholder="Введите email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="text">Ваше сообщение</label>
+            <textarea name="" id="text" cols="30" rows="10"></textarea>
+          </div>
 
-    <hr />
+          <input class="btn" type="submit" value="Связаться!" />
+        </form>
+      </div>
 
-    <h2>Связаться со мной</h2>
-    <form action="/">
-      <label for="name">Ваше имя</label>
-      <input type="text" id="name" placeholder="Введите имя" />
-      <br />
-      <br />
-      <label for="email">Ваш Email</label>
-      <input type="text" id="email" placeholder="Введите Email" />
-      <br />
-      <br />
-      <label for="text">Ваше сообщение</label>
-      <textarea name="" id="text" cols="30" rows="10"></textarea>
-      <br />
-      <input type="submit" value="Связаться!" />
-    </form>
+      <div class="position">
+        <div class="box"></div>
+      </div>
+
+      <div style="margin-bottom: 500px"></div>
+    </div>
   </body>
 </html>
