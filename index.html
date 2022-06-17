@@ -2,81 +2,95 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Resume RVN</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Велиев Р.Н.</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <div class="info">
-        <img src="Мой аватар.jpeg" alt="My foto" class="avatar" />
+        <img src="Мой аватар.jpeg" alt="Моё фото, как бы(" class="avatar" />
         <div class="info-text">
-          <h1>Руслан Велиев</h1>
+          <h1>Велиев Руслан</h1>
+          <p>15.02.1966 г.р. Город проживания - Москва.</p>
           <p>
-            Интересует должность веб-программиста. Обладаю знаниями HTML, CSS,
-            Java. Желаемая заработная плата
-            <strong>от 100 000 рублей</strong>.
+            Люблю спорт, книги, путешествия. Увлекаюсь Веб-программированием.
           </p>
-          <p>Я люблю путешествовать, программировать и заниматься спортом</p>
-
-          <h4>Мои социальные сети</h4>
+          <h4>Мои аккаунты в соцсетях</h4>
 
           <a
             href="https://www.facebook.com/profile.php?id=100080752457421"
             target="_blank"
-            >Facebook</a
-          >
+            title="Я в Facebook"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
           |
-          <a href="https://google.com" target="_blank">ГУГЛ</a>
+          <a
+            href="https://www.instagram.com/velievyr/"
+            target="_blank"
+            title="Я в Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
         </div>
       </div>
-
-      <div class="card bg-yellow">
+      <div class="card bg_green">
         <h2>Мои хобби</h2>
         <ol class="list">
-          <li>Пишу</li>
-          <li>Дышу</li>
-          <li>Пою</li>
+          <li>Чтение книг о новинках авиационной и автомобильной техники.</li>
+          <li>Интересуюсь новостями в строительной отрасли.</li>
+          <li>Изучаю различные торговые стратегии на рынке Форекс.</li>
+          <li>Занимаюсь гиревым спортом, слежу за турнирами по снукеру.</li>
         </ol>
       </div>
 
-      <div class="card bg-green">
+      <div class="card bg_pink">
         <h2>Опыт работы</h2>
         <table class="table">
           <tr>
-            <td>ООО МЦКО</td>
-            <td>психолог</td>
-            <td>1997-2000</td>
+            <td>ВС СССР</td>
+            <td>Сержант</td>
+            <td>1986-1988г.г.</td>
           </tr>
 
           <tr>
-            <td>ООО Лес</td>
-            <td>егерь</td>
-            <td>2000-2003</td>
+            <td>Корпорация МиГ</td>
+            <td>Рабочий</td>
+            <td>1988-1992г.г.</td>
           </tr>
+
           <tr>
-            <td>КООП Озеро</td>
-            <td>жулик</td>
-            <td>2004-2005</td>
+            <td>КБ "Мост-Банк</td>
+            <td>Сотрудник службы безопасности</td>
+            <td>1992-1995г.г.</td>
+          </tr>
+
+          <tr>
+            <td>Бизнес в сфере оптовой торговли</td>
+            <td>Генеральный директор</td>
+            <td>1996-2008г.г.</td>
+          </tr>
+
+          <tr>
+            <td>ООО "ВР-Сервис"</td>
+            <td>Заместитель Генерального директора</td>
+            <td>2008-2009г.г.</td>
+          </tr>
+
+          <tr>
+            <td>ООО "Архитектурная Политика"</td>
+            <td>Руководитель региональных проектов</td>
+            <td>2009-2010г.г.</td>
+          </tr>
+
+          <tr>
+            <td>Самозанятый</td>
+            <td>Самозанятый</td>
+            <td>2010-наст. время</td>
           </tr>
         </table>
       </div>
-
-      <div class="card bg-red">
-        <h2>Допинформация ниже</h2>
-        <ul class="link-list">
-          <li>
-            <a href="https://www.facebook.com/profile.php?id=100080752457421"
-              >ссылка на FB</a
-            >
-          </li>
-          <li>
-            <a href="https://google.com">ссылка на Google</a>
-          </li>
-        </ul>
-      </div>
-
       <div class="contact">
-        <h2>Связаться со мной</h2>
+        <h2>Как связаться со мной</h2>
+
         <form action="/">
           <div class="row">
             <div class="form-group">
@@ -86,12 +100,18 @@
 
             <div class="form-group">
               <label for="email">Ваш email</label>
-              <input type="text" id="email" placeholder="Введите email" />
+              <input
+                type="email"
+                id="email"
+                placeholder="Введите email"
+                value=""
+              />
             </div>
           </div>
           <div class="form-group">
             <label for="text">Ваше сообщение</label>
-            <textarea name="" id="text" cols="30" rows="10"></textarea>
+
+            <textarea id="text" cols="15" rows="2"></textarea>
           </div>
 
           <input class="btn" type="submit" value="Связаться!" />
@@ -101,8 +121,10 @@
       <div class="position">
         <div class="box"></div>
       </div>
-
-      <div style="margin-bottom: 500px"></div>
     </div>
+    <script
+      src="https://kit.fontawesome.com/0057a242a4.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
